@@ -56,4 +56,6 @@
 		
 		syncAds(arr)
 	}
+	
+	window.adsbyslisesync()
 })();
