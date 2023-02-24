@@ -1,6 +1,6 @@
 // EMBED EXAMPLE:
 //
-// <script async src="https://gist.github.com/zlumer/123123.js?r=12345"></script>
+// <script async src="https://gist.githubusercontent.com/zlumer/c1f5d59b0a55f0e21a042df36d3b37cd/raw/embed.js?r=123"></script>
 // <ins
 //     class="adsbyslise"
 //     style="display:inline-block;width:728px;height:90px"
