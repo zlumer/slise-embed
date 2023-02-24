@@ -12,6 +12,7 @@
 
 ;(function()
 {
+console.log("SLISE INIT STARTED...")
 	function substWithIframe(elem, url)
 	{
 	  // Get width and height of parent element
@@ -39,6 +40,7 @@
 		{
 			var val = arr[i];
 			var elem = document.querySelector('ins[data-ad-slot="'+ val.slot +'"]');
+			if (!elem) console.log("[SLISE] ad slot #" + val.slot + " not found")
 			if (!elem)
 				continue;
 			
@@ -48,10 +50,12 @@
 	
 	window.adsbyslisesync = function()
 	{
+	console.log("[SLISE] syncing ad slots...")
 		var arr = window.adsbyslise
 		if (!arr || !arr.length)
-			return
+			return console.log("[SLISE] no ad slots found")
 		
+		console.log("[SLISE] found " + arr.length + " ad slots")
 		window.adsbyslise = []
 		
 		syncAds(arr)
