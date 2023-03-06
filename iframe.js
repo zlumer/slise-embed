@@ -8,6 +8,7 @@
   function trackView()
   {
     // track view
+    console.log("TRACKING VIEW FOR AD #" + AD_ID)
     fetch(ANAL_ENDPOINT, {
         method: "POST",
         body: JSON.stringify({ ad: AD_ID, event: "view" }),
@@ -16,6 +17,7 @@
   function trackClick()
   {
     // track click
+    console.log("TRACKING CLICK FOR AD #" + AD_ID)
     fetch(ANAL_ENDPOINT, {
         method: "POST",
         body: JSON.stringify({ ad: AD_ID, event: "click" }),
