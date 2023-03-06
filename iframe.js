@@ -45,6 +45,8 @@
 
     var observer = new IntersectionObserver(callback, options);
     observer.observe(target);
+    
+    target.addEventListener("click", trackClick);
   }
   function __init__()
   {
