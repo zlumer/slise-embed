@@ -28,7 +28,7 @@
     var options = {
 //       root: document.querySelector("#banner-ad"),
 //       rootMargin: "0px",
-      threshold: 1.0,
+      threshold: 0.8,
     };
     var HAS_SHOWN = false;
     function callback(entries)
