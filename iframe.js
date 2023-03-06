@@ -52,7 +52,8 @@
   }
   function __init__()
   {
-    var elem = document.getElementById("banner-ad")
+    var ELEM_ID = "slise-display"
+    var elem = document.getElementById(ELEM_ID)
     if (!elem)
       console.error("SLISE: couldn't find the ad element!")
     AD_ID = elem.getAttribute("data-ad-id")
